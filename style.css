@@ -1,0 +1,179 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    
+}
+
+
+
+
+
+
+/* ESTRUCTURA*/
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 300px 600px 200px;
+    grid-template-areas: "titulo"
+                         "contenidoTarjeta"
+                         "footer";                      
+}
+
+
+
+.contenedor .titulo{
+    grid-area: titulo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: deepskyblue;
+    border-top: 5px solid rgb(212, 209, 33);
+    border-left: 5px solid rgb(212, 209, 33) ;
+    border-right: 5px solid rgb(212, 209, 33);
+    
+}
+
+.contenedor .contenidoTarjeta{
+    grid-area: contenidoTarjeta;
+    background-color: rgb(3, 3, 3);
+    border-top: 5px solid rgb(212, 209, 33);
+    border-bottom: 5px solid rgb(212, 209, 33);
+    border-left: 5px solid rgb(212, 209, 33) ;
+    border-right: 5px solid rgb(212, 209, 33);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+    
+
+
+.contenedor .footer{
+    grid-area: footer;
+    background-color: deepskyblue;
+    border-left: 5px solid rgb(212, 209, 33) ;
+    border-right: 5px solid rgb(212, 209, 33);
+    border-bottom: 5px solid rgb(212, 209, 33);
+
+}
+
+/* IMAGENES*/ 
+
+.contenedor .titulo .logo{
+    width: 200px;
+    height: 200px;
+}
+
+.contenedor .contenidoTarjeta .tarjeta1 .imagen1{
+    width: 350px;
+    height: 250px;
+    border: 3px solid black;
+}
+
+
+.contenedor .contenidoTarjeta .tarjeta2 .imagen2{
+    width: 350px;
+    height: 250px;
+    border: 3px solid black;
+}
+
+.contenedor .contenidoTarjeta .tarjeta3 .imagen3{
+    width: 350px;
+    height: 250px;
+    border: 3px solid black;
+}
+
+.contenedor .contenidoTarjeta .tarjeta4 .imagen4{
+    width: 350px;
+    height: 250px;
+    border: 3px solid black;
+}
+
+/* TEXTOS /*
+
+
+
+/* TARJETAS */
+
+.contenedor .contenidoTarjeta .tarjeta1, .tarjeta2, .tarjeta3, .tarjeta4{
+    width: 400px;
+    height: 350px;
+    border: 5px solid rgb(212, 209, 33);
+    background-color: deepskyblue;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  
+    
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        width: 100%;
+    }
+    .contenedor{
+        display: grid;
+        grid-template-areas:  "titulo"
+        "contenidoTarjeta" auto
+        "footer" auto;       
+    }
+
+    .contenidoTarjeta{
+        flex-direction: column;
+
+        
+    }
+
+    
+    .contenedor .contenidoTarjeta .tarjeta1 .imagen1,
+    .contenedor .contenidoTarjeta .tarjeta2 .imagen2,
+    .contenedor .contenidoTarjeta .tarjeta3 .imagen3,
+    .contenedor .contenidoTarjeta .tarjeta4 .imagen4{
+        width: 150px;
+        height: 150px;
+        border: 3px solid black;
+    
+    }
+
+    .contenedor .contenidoTarjeta .tarjeta1,
+    .contenedor .contenidoTarjeta .tarjeta2,
+    .contenedor .contenidoTarjeta .tarjeta3,
+    .contenedor .contenidoTarjeta .tarjeta4{
+        font-size: 10px;
+        width: 200px;    
+        height: 200px;
+    }
+
+
+
+   
+    }
+
+  
+
+
+
+
+
+
+
+   
+    
+    
+    
+    
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
